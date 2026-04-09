@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ChikkiBikki | Modern Agrarian Nutrition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#d7c3b0",
+                      "error": "#ba1a1a",
+                      "primary": "#875200",
+                      "inverse-on-surface": "#f3f0eb",
+                      "tertiary-fixed": "#ffdcc2",
+                      "on-surface": "#1c1c19",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#c1916a",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#2b1700",
+                      "on-error-container": "#93000a",
+                      "primary-fixed-dim": "#ffb866",
+                      "on-surface-variant": "#524436",
+                      "surface-dim": "#dcdad5",
+                      "on-secondary-fixed-variant": "#2f4e33",
+                      "on-secondary-fixed": "#03210b",
+                      "surface-container-highest": "#e5e2dd",
+                      "surface-tint": "#875200",
+                      "surface": "#fcf9f4",
+                      "on-tertiary-fixed-variant": "#623f1e",
+                      "primary-container": "#d48b2b",
+                      "surface-bright": "#fcf9f4",
+                      "primary-fixed": "#ffddba",
+                      "outline": "#857464",
+                      "surface-container": "#f0ede8",
+                      "surface-variant": "#e5e2dd",
+                      "secondary-container": "#c5e9c5",
+                      "inverse-surface": "#31302d",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#7d5633",
+                      "on-tertiary-fixed": "#2e1500",
+                      "surface-container-low": "#f6f3ee",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#acd0ad",
+                      "tertiary-fixed-dim": "#f0bc92",
+                      "background": "#fcf9f4",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#673d00",
+                      "on-background": "#1c1c19",
+                      "secondary-fixed": "#c8ecc8",
+                      "on-tertiary-container": "#4b2b0c",
+                      "on-primary-container": "#4b2b00",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#4a6a4d",
+                      "inverse-primary": "#ffb866",
+                      "surface-container-high": "#ebe8e3",
+                      "secondary": "#466649"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Noto Serif"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .jaggery-gradient {
+            background: linear-gradient(135deg, #875200 0%, #d48b2b 100%);
+        }
+        .jaggery-hover:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl shadow-[0_4px_48px_rgba(28,28,25,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-bold text-[#875200] dark:text-[#d48b2b]"><a href="homePage.html">ChikkiBikki</a></div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#875200] dark:text-[#d48b2b] border-b-2 border-[#875200] dark:border-[#d48b2b] pb-1" href="ShopAllProducts.html">Shop</a>
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#875200] transition-all duration-300 ease-in-out" href="OurStory.html">Our Story</a>
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#875200] transition-all duration-300 ease-in-out" href="contactUs.html">Contact Us</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="ShoppingCart.html" class="p-2 text-[#875200] active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 md:px-12 py-16 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 z-10">
+<h1 class="font-headline text-6xl md:text-8xl text-on-surface leading-[1.1] mb-8">
+                        Healthy Energy, <br/>
+<span class="text-primary italic">Naturally Sweet</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        Honoring the timeless bond between land and nutrition. Hand-crafted peanut and jaggery bars made for the modern agrarian.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a href="ShopAllProducts.html" class="px-8 py-4 bg-primary text-on-primary jaggery-gradient rounded-full font-bold jaggery-hover transition-all">
+                            Buy Now
+                        </a>
+<a href="ShopAllProducts.html" class="px-8 py-4 bg-surface-container-high text-on-surface-variant rounded-full font-bold hover:bg-surface-container-highest transition-all">
+                            Explore Flavors
+                        </a>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img alt="Artisanal Peanut Jaggery Bar" class="w-full h-auto object-cover aspect-[4/5]" data-alt="Close-up of hand-crafted peanut and jaggery energy bars with a rustic wooden background and soft warm morning sunlight" src="crunchy-nutty-chikki_670382-130898.avif"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section (Icon-based) -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">No Added Sugar</h3>
+<p class="text-on-surface-variant">Sweetened only with premium, iron-rich organic jaggery sourced from local farmers.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="fitness_center">fitness_center</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">High Protein</h3>
+<p class="text-on-surface-variant">Packed with the power of slow-roasted peanuts, providing 8g of plant-protein per bar.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-tertiary-container text-4xl" data-icon="eco">eco</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">100% Natural</h3>
+<p class="text-on-surface-variant">Zero preservatives, artificial colors, or stabilizers. Just pure, heirloom goodness.</p>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">The Harvest Collection</span>
+<h2 class="font-headline text-5xl md:text-6xl">Our Signature Blends</h2>
+</div>
+<a class="text-tertiary font-bold hover:underline mb-2" href="ShopAllProducts.html">View all products</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Product Card 1 -->
+<a href="ProductDetails.html" class="bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:shadow-[0_48px_48px_-12px_rgba(28,28,25,0.06)] hover:-translate-y-2">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container">
+<img alt="The Classic Crunch" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110" data-alt="High-end studio photography of a peanut and jaggery bar with loose roasted peanuts and gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAjZARKJIBrx3C58Ky9yZCd_XwFrdSA_oYLD1Lsh9Z2jSA7E3NKTCWv20O7mQzhNklSVylUO5rPvuZWA-lzCOuvrrBu2AKkmuSO7cxhuQLVSlXTx4MxB_1Ja5HZv2x_wxrP1gHLjlO1Wp91fPG9tF7u6ebIcpmKPZeTkslLZm_InRVuxGfT54zeVxdYG6kGisqpv3JHZHvUpAS_9NmoesuFMG_8uNjEuGGMvIOnUwSqOgimjGCKvDYMnTQDcbbXBBVeiejhDSpF2ea"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl">The Classic Crunch</h4>
+<span class="font-bold text-primary">$4.99</span>
+</div>
+<p class="text-on-surface-variant mb-6 text-sm">Our original recipe. Perfectly roasted peanuts held in a golden jaggery embrace.</p>
+<button class="w-full py-4 rounded-full border border-outline-variant hover:bg-primary hover:text-white hover:border-primary transition-all font-bold">Add to Cart</button>
+</div>
+</a>
+<!-- Product Card 2 -->
+<a href="ProductDetails.html" class="bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:shadow-[0_48px_48px_-12px_rgba(28,28,25,0.06)] hover:-translate-y-2">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container">
+<img src="./Gemini_Generated_Image_951n65951n65951n.png" alt="My Image"></div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl">Cardamom Kiss</h4>
+<span class="font-bold text-primary">$5.49</span>
+</div>
+<p class="text-on-surface-variant mb-6 text-sm">Fragrant pods of organic cardamom ground fine for an aromatic aftertaste.</p>
+<button class="w-full py-4 rounded-full border border-outline-variant hover:bg-primary hover:text-white hover:border-primary transition-all font-bold">Add to Cart</button>
+</div>
+</a>
+<!-- Product Card 3 -->
+<a href="ProductDetails.html" class="bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:shadow-[0_48px_48px_-12px_rgba(28,28,25,0.06)] hover:-translate-y-2">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container">
+<img alt="Smoky Salted Peanut" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110" data-alt="Overhead shot of a jaggery peanut bar sprinkled with sea salt flakes and roasted on an open fire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATKwnlo0YauxZMwwZovL91lV7y3BJyMVYExGHqJVMO7MGVPvI1idC3BYOE8TpSPekmkK1UTF8q8cz3Q1lNzmnmU65lVWLOy0wbs3cpzZjL9Bw4-2vdDQ5_ljpjEqz7bGG-Zyy3Ja69wrVkLQfYb-BKBW3R1itOD6Kn76V4kQa8HDguXotgenV7cvvjGiRFKvIzCFUGz3xE7QucwT_5w_X1Dhb6gZqwTm6O8Fy6bfvmaox7bjWJpLJu0RkD4H-STc3YlfELC_Dbjttu"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl">Smoky Salted</h4>
+<span class="font-bold text-primary">$5.49</span>
+</div>
+<p class="text-on-surface-variant mb-6 text-sm">Himalayan pink salt crystals provide a sharp contrast to the rich jaggery sweetness.</p>
+<button class="w-full py-4 rounded-full border border-outline-variant hover:bg-primary hover:text-white hover:border-primary transition-all font-bold">Add to Cart</button>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-surface-container-high py-32 px-6">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="font-headline text-5xl mb-20 text-on-surface">Voices from the Farm</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-surface p-12 rounded-xl shadow-sm text-left relative">
+<span class="material-symbols-outlined text-primary-container absolute top-8 left-8 opacity-20 text-6xl" data-icon="format_quote">format_quote</span>
+<p class="italic text-lg mb-8 leading-relaxed relative z-10 text-on-surface">"Finally, a snack that doesn't feel like a chemistry project. It tastes exactly like the chikki my grandmother used to make, but elevated."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<h5 class="font-bold">Ananya Sharma</h5>
+<p class="text-sm text-on-surface-variant">Daily Commuter</p>
+</div>
+</div>
+</div>
+<div class="bg-surface p-12 rounded-xl shadow-sm text-left relative">
+<span class="material-symbols-outlined text-primary-container absolute top-8 left-8 opacity-20 text-6xl" data-icon="format_quote">format_quote</span>
+<p class="italic text-lg mb-8 leading-relaxed relative z-10 text-on-surface">"As a runner, I need energy that lasts. The combination of peanuts and jaggery provides a steady burn without the sugar crash."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<h5 class="font-bold">Rohan Mehta</h5>
+<p class="text-sm text-on-surface-variant">Marathoner</p>
+</div>
+</div>
+</div>
+<div class="bg-surface p-12 rounded-xl shadow-sm text-left relative md:col-span-2 lg:col-span-1">
+<span class="material-symbols-outlined text-primary-container absolute top-8 left-8 opacity-20 text-6xl" data-icon="format_quote">format_quote</span>
+<p class="italic text-lg mb-8 leading-relaxed relative z-10 text-on-surface">"I love the transparency. You can literally see every ingredient in the bar. It's real food for real people."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<h5 class="font-bold">Sara Jenkins</h5>
+<p class="text-sm text-on-surface-variant">Nutritionist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-32 px-6">
+<div class="max-w-4xl mx-auto bg-primary-container/20 rounded-xl p-12 md:p-20 text-center">
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Join the Harvest Circle</h2>
+<p class="text-on-surface-variant mb-10 max-w-xl mx-auto">Subscribe to receive seasonal harvest updates, recipes, and exclusive first-access to new flavors.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow px-6 py-4 rounded-full border-none focus:ring-2 focus:ring-primary bg-surface-container-lowest outline-none shadow-sm" placeholder="Your Email Address" type="email"/>
+<button class="px-8 py-4 bg-primary text-on-primary rounded-full font-bold jaggery-hover transition-all shadow-md" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f6f3ee] dark:bg-[#2a2a26]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-['Noto_Serif'] text-xl font-bold text-[#875200] dark:text-[#d48b2b] mb-4">ChikkiBikki</div>
+<p class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] opacity-70">© 2026 ChikkiBikki. Celebrating the Modern Agrarian.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] opacity-70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] opacity-70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] opacity-70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Shipping Info</a>
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] opacity-70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Wholesale</a>
+</div>
+<div class="flex space-x-6">
+<a class="text-[#875200] hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="text-[#875200] hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

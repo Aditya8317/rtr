@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#d7c3b0",
+                        "error": "#ba1a1a",
+                        "primary": "#875200",
+                        "inverse-on-surface": "#f3f0eb",
+                        "tertiary-fixed": "#ffdcc2",
+                        "on-surface": "#1c1c19",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#c1916a",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#2b1700",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ffb866",
+                        "on-surface-variant": "#524436",
+                        "surface-dim": "#dcdad5",
+                        "on-secondary-fixed-variant": "#2f4e33",
+                        "on-secondary-fixed": "#03210b",
+                        "surface-container-highest": "#e5e2dd",
+                        "surface-tint": "#875200",
+                        "surface": "#fcf9f4",
+                        "on-tertiary-fixed-variant": "#623f1e",
+                        "primary-container": "#d48b2b",
+                        "surface-bright": "#fcf9f4",
+                        "primary-fixed": "#ffddba",
+                        "outline": "#857464",
+                        "surface-container": "#f0ede8",
+                        "surface-variant": "#e5e2dd",
+                        "secondary-container": "#c5e9c5",
+                        "inverse-surface": "#31302d",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#7d5633",
+                        "on-tertiary-fixed": "#2e1500",
+                        "surface-container-low": "#f6f3ee",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#acd0ad",
+                        "tertiary-fixed-dim": "#f0bc92",
+                        "background": "#fcf9f4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#673d00",
+                        "on-background": "#1c1c19",
+                        "secondary-fixed": "#c8ecc8",
+                        "on-tertiary-container": "#4b2b0c",
+                        "on-primary-container": "#4b2b00",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#4a6a4d",
+                        "inverse-primary": "#ffb866",
+                        "surface-container-high": "#ebe8e3",
+                        "secondary": "#466649"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f4;
+            color: #1c1c19;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl shadow-[0_4px_48px_rgba(28,28,25,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="font-['Noto_Serif'] text-2xl font-bold text-[#875200] dark:text-[#d48b2b]"><a href="homePage.html">ChikkiBikki</a></span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#875200] dark:text-[#d48b2b] border-b-2 border-[#875200] dark:border-[#d48b2b] pb-1 transition-all duration-300 ease-in-out hover:opacity-80" href="ShopAllProducts.html">Shop</a>
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#875200] transition-all duration-300 ease-in-out hover:opacity-80" href="OurStory.html">Our Story</a>
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#875200] transition-all duration-300 ease-in-out hover:opacity-80" href="contactUs.html">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="ShoppingCart.html" class="material-symbols-outlined text-[#875200] dark:text-[#d48b2b] text-2xl active:scale-95 transition-transform">shopping_cart</a>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Breadcrumbs -->
+<nav class="mb-12 flex items-center gap-2 text-label-md text-on-surface-variant font-medium tracking-wider uppercase">
+<a href="ShopAllProducts.html">Shop</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span>Artisanal Sweets</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary">Classic Jaggery Peanut Brittle</span>
+</nav>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+<!-- Gallery Sidebar + Hero -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Thumbnails -->
+<div class="md:col-span-1 flex md:flex-col gap-4 order-2 md:order-1">
+<div class="w-20 h-20 rounded-lg overflow-hidden border-2 border-primary cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="close-up of golden brown jaggery peanut brittle with whole roasted peanuts on a textured stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb5OGGBuJxql5yKw1dA9JHf0i6glCXNttxqEYy-OH8iHvmDSU4LumyU_Cp-qpRgBlD4ZbekOHBOTxQZ23OVR0DeRa7_5MTmQw95drtxEtIdshEAFqq-5ULa3KaP6BflFk-q4pD7oT5ktWVe7-6B9XpNMxeBnRRfaENygqnpSgX14S-2bfKtRyZcQbQGiBZItfuyJgzVV2Z7cZo5FEYZPhrSLdcu0abKizLkZjW3KvNDJjZ882u8DFJfRo8xZq2hnlb7nBpGTj4chd-"/>
+</div>
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container hover:opacity-80 transition-all cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="artisan peanut brittle being broken by hand showing internal texture and crunchy roasted nuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdl3zfFfV3Gvvdba05OPVBW9gL1bamSIH6GqaQN8XuToZMWA6ID8l4TSPvO-cilE7GqTve8Wk4Go4ICbbNOpKxIW5kkcoMVgOiraM8l7tdnVUZ8y9gse99jbxCaVeoxBUOzLuZriRt5MVB6IV93OwEDyyh1Uc0bZh1DCii4uZ37EZtd5TlQExdL9f9AHUTZ18__7oHUnYa9XJcm9lf_LFjaotk-7XSEuMD9_rtOBLCDyzZ7uj1huvLendS55lEzu3tVmzORSMzSoTS"/>
+</div>
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container hover:opacity-80 transition-all cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="minimalist packaging for Heritage Harvest peanut brittle with elegant serif typography and earth tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDEvo-Rm7JOy_si3aYHipE53mUQkba8hgWl-n4urL18RE3Iaf6_WPGtRU_BvlgiOlwIzo5el3jM97ibSrtSpH99bfIXvedVxiKn03MJHsnRdcNwg8OFg5tEpzJ0KN00AW285S_aSimmWp77dY9qJcLEd7-bjK3P8Q7f5eU65Fpzy-uRtKHffyGzimE1FZfMkivvaEZZjvebCW02UVOOUHwEMwz2nLrj64lh3h89hye6sm8CO7Ai3mSoTa17vbpxheLyJiBDP61XSLN"/>
+</div>
+</div>
+<!-- Main Hero -->
+<div class="md:col-span-5 aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_48px_rgba(28,28,25,0.06)] order-1 md:order-2">
+<img class="w-full h-full object-cover" data-alt="premium high-angle shot of large jaggery peanut brittle slab on handmade ceramic plate with warm sunlight shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfLS1m8d4KwFJ0gQmp6jRk1kPISa2ptsQk4OOQ34kbWVhn9rujAOE9ChL3pCyZgCDCAff6bhamYtm1BrGmV-uF_2jgVqaO3Wc2bg4VIiUsRjSPzctPHfsFHYM9mKt5fr-mSvKnUiElXlbGEWxkvoX0Wgv3lGmp-3GdNGh9lWL33YRdhYAZ43uNZwXExkMxQhkt1JVHVOSk_ehbhx56hlebcuzIsdU1bqdatbHvXGBQ3W0cpBlfdiybrA5Yf_MRATqRlgJRNSWJ8Hl2"/>
+</div>
+</div>
+<!-- Product Info Content -->
+<div class="lg:col-span-5 space-y-10">
+<div class="space-y-4">
+<span class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed text-xs font-bold rounded-full tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm">eco</span> 100% Organic
+                    </span>
+<h1 class="text-[3.5rem] leading-[1.1] font-headline font-bold text-on-surface tracking-tight">
+                        Classic Jaggery <br/>Peanut Brittle
+                    </h1>
+<div class="flex items-center gap-4">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">(124 Reviews)</span>
+</div>
+</div>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    Our heritage recipe uses hand-pressed Jaggery from the Sahyadri foothills and slow-roasted Peanuts. A perfect balance of smoky sweetness and nutty crunch, crafted in small batches to preserve ancestral flavors.
+                </p>
+<div class="space-y-6">
+<div class="flex items-baseline gap-4">
+<span class="text-4xl font-headline font-bold text-primary">₹450.00</span>
+<span class="text-xl text-on-surface-variant/50 line-through">₹599.00</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<div class="flex items-center bg-surface-container-high rounded-full px-4 py-3 min-w-[140px] justify-between">
+<button class="material-symbols-outlined hover:text-primary transition-colors">remove</button>
+<span class="font-bold text-lg px-4">01</span>
+<button class="material-symbols-outlined hover:text-primary transition-colors">add</button>
+</div>
+<a href="ShoppingCart.html" class="flex-1 bg-primary text-on-primary font-bold py-4 rounded-full shadow-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_bag</span>
+                            Add to Cart
+                        </a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-6">
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<span class="text-sm font-semibold">Free Shipping</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<span class="text-sm font-semibold">Quality Assured</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Details Section: Bento Style -->
+<div class="mt-32 grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Ingredients Card -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-10 relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold mb-8">Pure Ingredients</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grass</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Organic Peanuts</h4>
+<p class="text-sm text-on-surface-variant">Bold, farm-fresh peanuts roasted over woodfire for maximum aroma.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Artisan Jaggery</h4>
+<p class="text-sm text-on-surface-variant">Non-refined, mineral-rich sugarcane reduction with deep caramel notes.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Green Cardamom</h4>
+<p class="text-sm text-on-surface-variant">Freshly ground pods to balance the earthy sweetness.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">A2 Cow Ghee</h4>
+<p class="text-sm text-on-surface-variant">Small quantity of Vedic ghee for that perfect glossy finish.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -right-10 opacity-10">
+<span class="material-symbols-outlined text-[12rem]">eco</span>
+</div>
+</div>
+<!-- Nutrition Facts Card -->
+<div class="md:col-span-5 bg-surface-container-highest rounded-xl p-10">
+<h3 class="text-2xl font-headline font-bold mb-8">Nutrition Facts</h3>
+<div class="space-y-4 font-body">
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-bold">Serving Size</span>
+<span>1 Bar (45g)</span>
+</div>
+<div class="flex justify-between border-b-4 border-on-surface pb-1 text-xl">
+<span class="font-black">Calories</span>
+<span class="font-black">210</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 py-2">
+<span class="font-bold">Total Fat <span class="font-normal text-on-surface-variant">12g</span></span>
+<span class="font-bold">15%</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 py-2">
+<span class="font-bold">Saturated Fat <span class="font-normal text-on-surface-variant">2g</span></span>
+<span class="font-bold">10%</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 py-2">
+<span class="font-bold">Sodium <span class="font-normal text-on-surface-variant">45mg</span></span>
+<span class="font-bold">2%</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 py-2">
+<span class="font-bold">Total Carbohydrate <span class="font-normal text-on-surface-variant">24g</span></span>
+<span class="font-bold">9%</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 py-2">
+<span class="font-bold">Sugars <span class="font-normal text-on-surface-variant">16g</span></span>
+<span></span>
+</div>
+<div class="flex justify-between py-2 text-lg">
+<span class="font-bold text-secondary">Protein</span>
+<span class="font-bold text-secondary">6g</span>
+</div>
+<p class="text-[10px] text-on-surface-variant mt-4 leading-tight">
+                        *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Reviews Section -->
+<section class="mt-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="space-y-2">
+<h2 class="text-[2.5rem] font-headline font-bold leading-tight">Harvest Stories</h2>
+<p class="text-on-surface-variant">What our community thinks of this heritage blend.</p>
+</div>
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all flex items-center gap-2">
+                    Write a Review
+                    <span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Taste of Childhood</h4>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">
+                        "The jaggery flavor is so deep and complex. It's not just sweet; it has those smokey notes I remember from my grandmother's kitchen. The peanuts are perfectly crisp."
+                    </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a smiling middle-aged woman in a sunny garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLgpKShOjRWahZ3s7DdJ7NLRHJUg_ktbMFzVVsQ3iOGsr79E-cVf238eNCowJxWU3hWURDO02E3jn79YAU5o01KMsmLmPnxeRDXbGwqyCMB3NsQFOVrY6DLUuNX47gTdLSxk6zlmGwM9aWbNObztXt7P5g_dd5lG8ciK72af7X2FPMahwNZHaM45P5TTfbkZ_ej5VvKwnVTeexK2b7hoIlfgpA7PEBFBZaEkykJdKg-LpTV9RDUUECEqV4Za9Xx6kmPdniH_2ZdvWZ"/>
+</div>
+<div>
+<span class="block font-bold text-xs uppercase tracking-wider">Anita R.</span>
+<span class="text-[10px] text-on-surface-variant">Verified Buyer</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Quality Over Everything</h4>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">
+                        "You can tell these are small batches. No weird aftertaste, just pure ingredients. My kids love it and I feel better giving them this than processed candy."
+                    </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a young man with glasses against a warm neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa4ULV7oLORFNbzmkG4x2bVkPPOe4W39Hctp9rl1uEHbmts0NgKLL1Ulr8A4X62CtTfQjw7VMPmOnFxsBV8vndFHiOwRtnNCGM9lzKzbgai-8qNNh2Lr7ZbC_d9i0-n76se-_VZlKkivIiybFEC0wo1-OyO-sNxpMsxupXZ-7xjjVycqQcDPViwkr7ESVftTAL353rGxZ6yVHB6wtfvbQ276Kp3fVsGoO0R1CSVpQp91WdUVQlVNEEOc4B_hr-wDJGPa7fIWxnrMnM"/>
+</div>
+<div>
+<span class="block font-bold text-xs uppercase tracking-wider">Vikram S.</span>
+<span class="text-[10px] text-on-surface-variant">Verified Buyer</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Beautiful Packaging</h4>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">
+                        "Bought this as a gift and the recipient was so impressed. The brittle stays crunchy in the airtight container. Definitely buying again!"
+                    </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="candid shot of a young woman laughing in an outdoor café, warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ta888XZFXEd3UVjVoBTrnzuZWUSCKghkKauScboMi5sH97NJNzjHdR1N2Yjj4Bk4Tg3MwOVYMfVDpPyVnq5brQ_wFmzSB82hm5c5HptvMWtJEGc-nyaioK7ORXULIphxubwmJePKb5g0FMEdyE1v3Rkeyzs87IkXiQa-JdUmZ8fygVBYBktw_p6yw770DfhBWpQ2XM8vTmZymJ0_Wf2TuRZxwmyVx2oFm7ymwHkYiKT-Q5Y6mtXjo5sXyu2nTHLnSnCaRlO3OBn3"/>
+</div>
+<div>
+<span class="block font-bold text-xs uppercase tracking-wider">Meera K.</span>
+<span class="text-[10px] text-on-surface-variant">Verified Buyer</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f6f3ee] dark:bg-[#2a2a26]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto gap-8">
+<div class="space-y-4 text-center md:text-left">
+<span class="font-['Noto_Serif'] text-xl font-bold text-[#875200] dark:text-[#d48b2b]">ChikkiBikki</span>
+<p class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] max-w-xs">
+                    Celebrating the Modern Agrarian through ancestral recipes and sustainable sourcing.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Shipping Info</a>
+<a class="text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Wholesale</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4]">© 2026 ChikkiBikki. Celebrating the Modern Agrarian.</p>
+</div>
+</div>
+</footer>
+</body></html>

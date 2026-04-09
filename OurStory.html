@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#d7c3b0",
+                    "error": "#ba1a1a",
+                    "primary": "#875200",
+                    "inverse-on-surface": "#f3f0eb",
+                    "tertiary-fixed": "#ffdcc2",
+                    "on-surface": "#1c1c19",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#c1916a",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#2b1700",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb866",
+                    "on-surface-variant": "#524436",
+                    "surface-dim": "#dcdad5",
+                    "on-secondary-fixed-variant": "#2f4e33",
+                    "on-secondary-fixed": "#03210b",
+                    "surface-container-highest": "#e5e2dd",
+                    "surface-tint": "#875200",
+                    "surface": "#fcf9f4",
+                    "on-tertiary-fixed-variant": "#623f1e",
+                    "primary-container": "#d48b2b",
+                    "surface-bright": "#fcf9f4",
+                    "primary-fixed": "#ffddba",
+                    "outline": "#857464",
+                    "surface-container": "#f0ede8",
+                    "surface-variant": "#e5e2dd",
+                    "secondary-container": "#c5e9c5",
+                    "inverse-surface": "#31302d",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#7d5633",
+                    "on-tertiary-fixed": "#2e1500",
+                    "surface-container-low": "#f6f3ee",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#acd0ad",
+                    "tertiary-fixed-dim": "#f0bc92",
+                    "background": "#fcf9f4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#673d00",
+                    "on-background": "#1c1c19",
+                    "secondary-fixed": "#c8ecc8",
+                    "on-tertiary-container": "#4b2b0c",
+                    "on-primary-container": "#4b2b00",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#4a6a4d",
+                    "inverse-primary": "#ffb866",
+                    "surface-container-high": "#ebe8e3",
+                    "secondary": "#466649"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .jaggery-gradient {
+            background: linear-gradient(135deg, #875200 0%, #d48b2b 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(212, 139, 43, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl shadow-[0_4px_48px_rgba(28,28,25,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-bold text-[#875200] dark:text-[#d48b2b]"><a href="homePage.html">ChikkiBikki</a></div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#875200] transition-all duration-300 ease-in-out hover:opacity-80" href="ShopAllProducts.html">Shop</a>
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#875200] dark:text-[#d48b2b] border-b-2 border-[#875200] dark:border-[#d48b2b] pb-1 transition-all duration-300 ease-in-out hover:opacity-80" href="OurStory.html">Our Story</a>
+<a class="font-['Noto_Serif'] text-sm tracking-wider uppercase font-medium text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#875200] transition-all duration-300 ease-in-out hover:opacity-80" href="contactUs.html">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="ShoppingCart.html" class="material-symbols-outlined text-[#875200] dark:text-[#d48b2b] transition-transform active:scale-95" data-icon="shopping_cart">shopping_cart</a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Our Heritage -->
+<section class="relative px-6 md:px-12 py-20 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+<div class="lg:w-1/2 z-10">
+<span class="font-label text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Est. 1924 • Tradition Revived</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface leading-[1.1] mb-8">
+                        Our <br/><span class="italic text-primary">Heritage</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
+                        In the sun-drenched courtyards of rural India, we found the blueprint for modern health. A legacy of slow-roasting, hand-pounding, and honest ingredients.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="jaggery-gradient text-on-primary px-8 py-4 rounded-full font-bold transition-all hover:opacity-90 active:scale-95 shadow-lg shadow-primary/20">
+                            Explore the Craft
+                        </button>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 translate-x-4">
+    <img alt="Artisanal Peanut Jaggery Bar"
+         class="w-full h-auto object-cover aspect-[4/5]"
+         data-alt="Close-up of hand-crafted peanut and jaggery energy bars with a rustic wooden background and soft warm morning sunlight"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb8M81BtG79l126SpHg506mtGd0CuNkKW8iNQmy9j6BmTddcWs8A4Tk7GbVMgJe9kW6apkBqIlRz1BPA34XYWIUUsl8m61GCenJXcOkg9SbGOoU8jyyiHDqAM-ZZTFBUDvOnK_uLXVscO_GupJv8PjbRuCoZvOgfI4I2RfTL1sKZ4rtPgvojnRTJNOAPj4uDDz9LmknawDfJFTJpKzJPzxOJaPHeuB7EqiboQUGbOWfCXrD8NlfgXrKwJD_6d1GN5kuJsy24jWv8TX">
+</div>
+<!-- Decorative back image that bleeds -->
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story: Bento Grid Narrative -->
+<section class="bg-surface-container-low py-32 px-6 md:px-12 rounded-xl mx-4 md:mx-12">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Text Block -->
+<div class="md:col-span-7 flex flex-col justify-center">
+<h2 class="font-headline text-3xl md:text-5xl text-on-surface mb-8">Reviving the <span class="text-primary italic">Soul of Snacking</span></h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+<p>
+                                Heritage Harvest was born from a simple realization: the world had forgotten the taste of patience. In our haste for convenience, we traded the complex, earthy sweetness of palm jaggery for refined sugars, and the nutritional powerhouse of slow-roasted peanuts for processed oils.
+                            </p>
+<p>
+                                We traveled back to the source—to the agrarian heartlands where recipes are passed down like heirlooms. Our mission is to bridge this ancestral wisdom with the pace of the modern world.
+                            </p>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div class="flex -space-x-3">
+</div>
+<span class="text-sm font-bold text-on-surface">The Makers of Heritage</span>
+</div>
+</div>
+<!-- Asymmetric Image Block -->
+<div class="md:col-span-5 grid grid-cols-2 gap-4">
+<div class="pt-12"></div>
+<div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision: Glassmorphism / Tonal Cards -->
+<section class="py-32 px-6 md:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Mission Card -->
+<div class="bg-surface-container-lowest p-12 rounded-xl border border-outline-variant/15 shadow-[0_48px_100px_-20px_rgba(28,28,25,0.06)] relative overflow-hidden group">
+
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline text-3xl mb-6">Our Mission</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                            To honor the labor of the Indian farmer by transforming traditional crops into premium, nutrient-dense snacks that empower global health without compromising on authentic heritage flavors.
+                        </p>
+</div>
+<!-- Vision Card -->
+<div class="bg-secondary p-12 rounded-xl text-on-secondary shadow-xl relative overflow-hidden group">
+
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-6" data-icon="visibility">visibility</span>
+<h3 class="font-headline text-3xl mb-6">Our Vision</h3>
+<p class="text-on-secondary/80 leading-relaxed text-lg">
+                            To become the world's most trusted companion in healthy living, proving that the future of nutrition is not found in a laboratory, but in the wisdom of our collective past.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Imagery & Ingredients: Horizontal Bleed -->
+<section class="py-20 bg-surface-container overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 mb-16">
+</div>
+<div class="flex gap-8 overflow-x-auto pb-12 px-6 no-scrollbar snap-x">
+<div class="flex-none w-80 md:w-[450px] snap-center">
+
+<div class="flex-none w-80 md:w-[450px] snap-center">
+
+</div>
+<div class="flex-none w-80 md:w-[450px] snap-center">
+
+</div>
+<div class="flex-none w-80 md:w-[450px] snap-center">
+
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6 text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl mb-8">Ready to Taste the <span class="italic text-primary">Tradition</span>?</h2>
+<p class="text-on-surface-variant mb-12 text-lg">Every bite supports a farmer, preserves a craft, and nourishes your soul.</p>
+<a href="ShopAllProducts.html" class="jaggery-gradient text-on-primary px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition-all active:scale-95">
+                    Browse the Collection
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f6f3ee] dark:bg-[#2a2a26]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Noto_Serif'] text-xl font-bold text-[#875200] dark:text-[#d48b2b]">ChikkiBikki</div>
+<p class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] mt-2 opacity-70">© 2026 ChikkiBikki. Celebrating the Modern Agrarian.</p>
+</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Shipping Info</a>
+<a class="font-['Manrope'] text-sm text-[#1c1c19] dark:text-[#fcf9f4] text-[#1c1c19]/70 dark:text-[#fcf9f4]/70 hover:text-[#875200] dark:hover:text-[#d48b2b] transition-colors cursor-pointer" href="#">Wholesale</a>
+</div>
+</div>
+</footer>
+</body></html>
